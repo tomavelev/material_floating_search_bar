@@ -1,7 +1,3 @@
-## 0.4.3
-
-* **Added** Web support
-
 ## 0.4.2
 
 * **Breaking** Replaced deprecated `ToolbarOptions` with `EditableTextContextMenuBuilder`
