@@ -280,17 +280,17 @@ class FloatingSearchAppBarState extends ImplicitlyAnimatedWidgetState<
     final bool showHamburger = widget.automaticallyImplyDrawerHamburger &&
         Scaffold.of(context).hasDrawer;
 
-    Widget? leading;
-    if (showHamburger) {
-      leading = FloatingSearchBarAction.hamburgerToBack();
-    } else if (widget.automaticallyImplyBackButton &&
-        (Navigator.canPop(context) || widget.body != null)) {
-      leading = FloatingSearchBarAction.back(
-        showIfClosed: Navigator.canPop(context),
-      );
-    }
-
-    return leading != null ? <Widget>[leading, ...actions] : actions;
+    // Widget? leading;
+    // if (showHamburger) {
+    //   leading = FloatingSearchBarAction.hamburgerToBack();
+    // } else if (widget.automaticallyImplyBackButton &&
+    //     (Navigator.canPop(context) || widget.body != null)) {
+    //   leading = FloatingSearchBarAction.back(
+    //     showIfClosed: Navigator.canPop(context),
+    //   );
+    // }
+    //  leading != null ? <Widget>[leading, ...actions] :
+    return actions;
   }
 
   bool _isOpen = false;
